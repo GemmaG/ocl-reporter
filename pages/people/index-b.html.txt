@@ -1,0 +1,364 @@
+People
+    
+    a.icon-github {
+	background: url(../github.png) no-repeat 0 0;
+	padding: 0 0 2px 2em;
+    }
+    a.icon-cloud {
+	background: url(../cloud.png) no-repeat 0 0;
+        background-size: 17px;
+	padding: 0 0 2px 2em;
+    }
+    a.icon-bullhorn {
+	background: url(../bullhorn.png) no-repeat 0 0;
+        background-size: 17px;
+	padding: 0 0 2px 2em;
+    }
+    a.icon-wrench {
+	background: url(../wrench.png) no-repeat 0 0;
+        background-size: 17px;
+	padding: 0 0 2px 2em;
+    }
+    
+  
+  Project Members
+  OCaml Labs is situated at the University of Cambridge Computer Laboratory, and collaborates with a wide variety of industrial partners, primarily Jane Street, Horizon and Citrix.  We also work closely with OCamlPro on community software projects, and maintain the ocaml.org infrastructure.
+   
+    University of Cambridge Computer Laboratory
+    Core Members
+    
+      
+        
+        Anil MadhavapeddyPrincipal Investigator
+      
+    
+      
+        
+        Alan MycroftPrincipal Investigator
+      
+    
+      
+        
+        Ian LesliePrincipal Investigator
+      
+    
+      
+        
+        Jon CrowcroftPrincipal Investigator
+      
+    
+      
+        
+        Amir ChaudhryProgram Manager
+      
+    
+      
+        
+        Leo WhiteResearch Associate
+      
+    
+      
+        
+        Jeremy YallopSenior RA
+      
+    
+      
+        
+        Stephen DolanPhD candidate
+      
+    
+      
+        
+        Balraj SinghVisitor
+      
+    
+      
+        
+        Heidi HowardResearch Assistant
+      
+    
+      
+        
+        Raphael ProustPhD Student
+      
+    
+      
+        
+        Vsevolod StakhovPhD Student
+      
+    
+      
+        
+        David SheetsResearch Assistant
+      
+    
+      
+        
+        Thomas GazagnaireSenior RA
+      
+    
+      
+        
+        Richard MortierLecturer
+      
+    
+      
+        
+        Gregory TsipenyukPhD Student
+      
+    
+      
+        
+        Magnus SkjegstadResearch Associate
+      
+    
+      
+        
+        Thomas LeonardSenior RA
+      
+    
+      
+        
+        KC SivaramakrishnanResearch Associate
+      
+    
+    Internal Collaborators
+    
+      
+        
+        Haris RotsosPhD Student
+      
+    
+      
+        
+        Timothy G. GriffinReader
+      
+    
+      
+        
+        Robert WatsonLecturer
+      
+    
+      
+        
+        Alastair BeresfordLecturer
+      
+    
+      
+        
+        Gabor PaliSummer visitor (2012,2013)
+      
+    
+      
+        
+        Daniel BünzliSoftware Engineer
+      
+    
+      
+        
+        Hannes MehnertIntern
+      
+    
+      
+        
+        Benjamin FarinierSummer visitor
+      
+    
+      
+        
+        Matthieu JournaultSummer visitor
+      
+    
+      
+        
+        Frederic BourSummer visitor
+      
+    
+      
+        
+        Nicolas Ojeda BarResearch Associate
+      
+    
+      
+        
+        Stephen KellStudent
+      
+    
+      
+        
+        Mindy PrestonVisitor
+      
+    
+      
+        
+        Carlos Molina-JimenezResearch Associate
+      
+    
+      
+        
+        Mounir Nasr AllahSummer visitor
+      
+    
+    External Partners
+    
+        Citrix
+        
+      
+        
+        Euan HarrisVisitor
+      
+    
+      
+        
+        Dave ScottXen Architect
+      
+    
+      
+        
+        Jonathan LudlumSoftware Engineer
+      
+    
+      
+        
+        Lars KurthCommunity Manager
+      
+    
+      
+        INRIA
+        
+      
+        
+        Fabrice Le FessantScientist
+      
+    
+      
+        
+        Xavier LeroyGalium team leader
+      
+    
+      
+        
+        Xavier ClercResearcher
+      
+    
+      
+        OCamlPro
+        
+      
+        
+        Pierre Chambart
+      
+    
+      
+        
+        Louis Gesbert
+      
+    
+      
+        Jane Street Capital
+        
+      
+        
+        Yaron MinskyHead of Quantitative Research and Technology
+      
+    
+      
+        
+        Mark ShinwellQuantitative Researcher
+      
+    
+      
+        Horizon
+        
+      
+        
+        Derek McAuleyProfessor of Digital Economy
+      
+    
+      
+        
+        David KaloperIntern
+      
+    
+      
+        New York University
+        
+      
+        
+        Ashish AgarwalResearch Scientist
+      
+    
+      
+        Universite de Mons, Belgium
+        
+      
+        
+        Christophe Troestler
+      
+    
+      
+        Google
+        
+      
+        
+        Jason HickeySoftware Engineer
+      
+    
+      
+        Former Members
+        
+      
+        
+        Philippe WangResearch Associate
+      
+    
+      
+        
+        Steven HandReader
+      
+    
+      
+        
+        Bogdan-Alexandru MaticanACS Student (2013)
+      
+    
+      
+        
+        George ParisisResearch Associate
+      
+    
+      
+        
+        Vincent BernardoffResearch Intern (2013)
+      
+    
+      
+        
+        Vincent BotbolMasters Student
+      
+    
+      
+        
+        Sebastian FunkStudent
+      
+    
+      
+        
+        Andy RayVisitor
+      
+    
+      
+        
+        Yan ShvartzshnaiderResearch Associate
+      
+    
+      
+  
+  Funding
+  
+  OCaml Labs is primarily funded by Jane Street with a platform grant.  It is also supported by Citrix Systems R&D.  There are also several research grants associated with OCamlLabs:
+ RCUK Horizon Digital Economy Research Hub grant, EP/G065802/1.
+ EU FP7 Trilogy2 project.
+  
+
+  

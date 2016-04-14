@@ -1,0 +1,140 @@
+Computer Laboratory – OCaml Labs: Collaboration
+
+ Skip to content | Access key help   
+  
+
+    
+                Search
+            
+      
+
+      
+    
+
+  Advanced searchA–ZContact us
+  
+
+
+Computer Laboratory
+
+
+ 
+University of CambridgeComputer LaboratoryOCaml LabsCollaborationOCaml LabsNewsBlogsProjectsPapersPeopleCollaborationContact UsOCaml LabsCollaboration
+
+There are several ways to work with OCaml Labs, ranging from internships
+and short visits, to embarking on a PhD degree, to 
+post-doctoral work (both research and engineering-oriented).
+
+A core principle of the OCaml Labs is that all of the work done here will be
+released to the public and made available under
+open-source licenses. To this end, all members of the Labs retain their own
+copyright, with the requirement that all OCaml-related activites be released
+under a free software license (preferably BSD/ISC or LGPLv2).
+
+Applying for a PhD
+
+
+We're always looking out for bright people to become PhD students.  Of course,
+entry is very competitive, but every year quite a few people do win!
+A PhD degree in the Computer Lab typically takes 3-4 years, and requires application
+well in advance.  You should read up on the
+official process,
+and also contact us
+to discuss research proposals before you submit them.
+
+You will need to do some research on what sort of funding model you
+want (self-funding, or an EU grant, or a Gates Scholarship, or
+College funding). Some of them, like the Gates funds, are very
+competitive and so you will want to get your application in early.
+Also make sure you have the minimum qualifications (a Masters-level
+degree helps, as does experience in industry).  We can also fund
+exceptional candidates directly, so do not despair if you cannot find
+external funding and always ask us!
+
+Full-time positions
+
+
+We are hiring for full-time post-doctoral and engineering positions
+for the projects we work on.
+These include:
+  Compiler engineers: the OCaml compiler is a very finely
+  maintained tool, and we wish to help INRIA to maintain and develop it.
+  The projects page lists some of the tasks,
+  including a developing multicore-capable GC (without sacrificing
+  sequential performance), improving cross-module inlining and general
+  optimisation, adding an efficient LLVM backend (with hooks for precise
+  GC), and experimenting with more radical techniques such as
+  whole-program optimisation.  If you are excited by the thought of such 
+  projects, enjoy open-source coding and interaction, and want to work
+  in a vibrant and slightly crazy research group, then you want to apply!
+  Post-doctoral systems research: we use OCaml heavily in a
+  variety of systems projects, ranging from the 
+  Mirage exokernel, the 
+  Signpost DNSSEC routing engine,
+  the Xen Cloud Platform
+  and privacy-aware personal data
+  management.  This is a good opportunity for a freshly graduated
+  PhD student who wants to spend a few years building complex networked
+  systems and publishing (both papers and code).
+
+
+
+
+
+
+Visitors and Internships
+
+
+If you are working on a project relevant to the OCaml ecosystem, and
+would like to spend some time working directly with OCaml Labs staff and
+students, then get in touch!  We can arrange (paid) internships for
+graduate students, and office space for visitors.  A typical visit lasts
+from a few days to three months.  A graduate student should think about
+a project for the internship that could lead to a good conference
+publication, and we are happy to discuss projects. It should ideally
+be related to your main PhD topic to get the most benefit out of it.
+
+If you visit in the summer, then it should be possible to arrange
+for accommodation in one of Cambridge's beautiful Colleges. Availability
+is very variable, and depends on whether you need single or multiple
+rooms.
+
+For current students in Cambridge, several of our industrial
+partners offer paid internship programs over the summer, where you go
+work on real problems.  Check out the Jane Street
+program, and contact us if interested in a Citrix internship locally in Cambridge.
+
+For external undergraduates looking for a placement (e.g. from an
+ENS in France), this can also be
+arranged for a usual period between 4-6 months.  Please contact
+us with at least two months before the desired starting period.
+
+Industrial Partnerships
+
+If you are an industrial user of OCaml, then you are very welcome
+to visit and discuss collaboration opportunities.  Although the Lab
+itself does not undertake commercial work, we are eager to learn about
+your needs.  We help organise ACM/SIGPLAN conferences (such as 
+CUFP and OUD)
+where you can get more publicity, and we plan to host smaller workshops
+and hackathons in different regions.  Members of the Lab may
+consult on a private basis, but larger opportunties should be directed
+to dedicated commercial companies such as OCamlPro.
+
+If you wish to contribute funding towards the goals of the Labs, then
+please get in touch with Anil Madhavapeddy.
+This can often be a tax-efficient and effective way to help expand your
+use of functional programming and ensure the long-term future of OCaml.
+
+We also regularly participate in industry/academic collaborative
+projects, particularly via the EPSRC and
+the EU FP7 programme.
+Note that we do not act as coordinators or management bases for EU
+projects, and only as research participants.
+
+
+
+
+
+© 2012-2013 Anil MadhavapeddyInformation provided by Anil Madhavapeddy
+

@@ -1,0 +1,34 @@
+Contact Us
+
+
+
+Contact Us
+For day-to-day inquiries about the Labs, please contact us
+directly at the e-mail addresses below, or join the public mailing
+lists.  The ocamllabs-announce is a low-volume mailing list
+for software releases, and ocamllabs-devel covers day-to-day
+development with our external collaborators.
+
+For a low-volume mailing list, join the announcements list below. 
+Day-to-day notices and 
+development will be on the ocamllabs-devel list, and the Mirage OS
+mailing list is for that particular project.
+
+
+
+  People
+  Anil Madhavapeddy
+  Alan Mycroft
+  Ian Leslie
+  Jon Crowcroft
+
+
+  Mailing List
+  OCamlLabs-announce
+  OCamlLabs-devel
+  Mirage-devel
+  OCaml.org lists
+
+
+
+

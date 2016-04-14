@@ -1,0 +1,258 @@
+Computer Laboratory – OCaml Labs: Projects    a.icon-github {
+	background: url(../github.png) no-repeat 0 0;
+	padding: 0 0 2px 2em;
+    }
+    a.icon-cloud {
+	background: url(../cloud.png) no-repeat 0 0;
+        background-size: 17px;
+	padding: 0 0 2px 2em;
+    }
+    a.icon-bullhorn {
+	background: url(../bullhorn.png) no-repeat 0 0;
+        background-size: 17px;
+	padding: 0 0 2px 2em;
+    }
+    a.icon-wrench {
+	background: url(../wrench.png) no-repeat 0 0;
+        background-size: 17px;
+	padding: 0 0 2px 2em;
+    }
+    
+
+ Skip to content | Access key help   
+  
+
+    
+                Search
+            
+      
+
+      
+    
+
+  Advanced searchA–ZContact us
+  
+
+
+Computer Laboratory
+
+
+ 
+University of CambridgeComputer LaboratoryOCaml LabsProjectsOCaml LabsNewsBlogsProjectsPapersPeopleCollaborationContact UsOCaml Labs        The OCaml Labs are organised around focussed projects summarised below.  Click on the heading for more information, and get in touch with the project owner if you'd like to know more.  The projects are:
+    OCaml Platform: A rigorously designed, tested and documented base of OCaml libraries and tools. The OCaml Compiler: Maintaining, extending and documenting the core OCaml compiler toolchain Mirage OS: A high-performance, type-safe library OS written in OCaml. Community Outreach: Building an effective online presence for the worldwide OCaml community 
+    
+    
+        
+                        table { 
+            table-layout: fixed;
+            border-spacing: 0px 2px;
+            }
+            .blank { background-color: #fefefe; }
+            .planning { font-size: 80%; background-color: #bbccee; }
+            .doing { font-size: 80%; background-color: #eeeebb; }
+            .complete { font-size: 80%; background-color: #bbddbb; }
+            img.mugshot { float:left; padding-right: 5px; }
+            tr.dates {
+            font-size: 0.75em;
+            background-color: #dfdfdf;
+            color: #111111;
+            }
+            
+          
+                
+                OCaml Platform »
+        
+        The OCaml Platform combines the core OCaml compiler with a coherent set of
+libraries, tools and documentation.  The requirements and direction of the
+Platform are initially being guided by large users of OCaml such as Jane
+Street,
+Citrix and
+Lexifi.
+The reason for initially taking direction from industrial users is because
+these companies have a great deal of experience of using the language at scale
+(e.g millions of lines of code, thousands of modules and complicated testing
+requirements). We take a pragmatic view that examining and solving the problems
+such users have will ultimately result in a large and positive impact on the
+wider community, through significantly improved tooling, libraries and
+documentation.
+The current thrust of work is to improve the tooling around packaging, build
+and test infrastructure.  Once complete, this will enable us to effectively
+run over hundreds of community packages and determine selection criteria
+for the Platform.  A key aspect of this selection will be which libraries
+are already popular and in use, and also how actively maintained and portable
+they are across different operating systems.
+The tasks below reflect this by:
+The OPAM package manager acts as the package management front end.The OPAM Doc tool replaces the venerable ocamldoc tool with modern, cross-referenced HTML output across several libraries.The OCamlot testing infrastructure runs continuous integration of OPAM stable and candidate packages across a variety of operating systems and CPU architectures.
+
+The mailing list for discussion about this is platform@lists.ocaml.org (archive).
+
+        
+                    2013           2014           2015          ∞
+                          
+               Assemblage                                   
+               OCaml.org governance                                   
+               OPAM-in-a-box                                   
+               Docker Builds                                                  Ctypes Stubgen                                   
+               Codoc 0.2.0                                   
+               OPAM 1.2                                   
+               OPAMDoc prototype                                   
+               OPAM 1.1                                   
+               OCamlot 0.2.0                                   
+               Platform Preview                                                  Ctypes 0.1                                   
+               Non-x86 Machines                                   
+               OPAM 1.0                 
+         
+        
+      
+        
+                        table { 
+            table-layout: fixed;
+            border-spacing: 0px 2px;
+            }
+            .blank { background-color: #fefefe; }
+            .planning { font-size: 80%; background-color: #bbccee; }
+            .doing { font-size: 80%; background-color: #eeeebb; }
+            .complete { font-size: 80%; background-color: #bbddbb; }
+            img.mugshot { float:left; padding-right: 5px; }
+            tr.dates {
+            font-size: 0.75em;
+            background-color: #dfdfdf;
+            color: #111111;
+            }
+            
+          
+                
+                The OCaml Compiler »
+        
+        We are working on maintaining and extending the core OCaml compiler toolchain
+and runtime. This consists of a variety of day-to-day tasks such as submitting
+bug fixes, and also longer-term improvements to the type system and runtime
+libraries (see below).
+We are actively engaging with the wider OCaml community to ensure that any 
+improvements and modifications we propose are thoroughly discussed, 
+well-formulated and maintainable.
+
+        
+                    2013           2014           2015          ∞
+                          
+               Multicore                                   
+               Emission of DWARF debugging information                                   
+               Modular Implicits prototype                                   
+               Namespaces and module aliases                                                  Higher kinded polymorphism                                                  Exception matches                                   
+               Open types                                   
+               OCaml Java                                   
+               Syntax extensions                                   
+               Record disambiguation                 
+         
+        
+      
+        
+                        table { 
+            table-layout: fixed;
+            border-spacing: 0px 2px;
+            }
+            .blank { background-color: #fefefe; }
+            .planning { font-size: 80%; background-color: #bbccee; }
+            .doing { font-size: 80%; background-color: #eeeebb; }
+            .complete { font-size: 80%; background-color: #bbddbb; }
+            img.mugshot { float:left; padding-right: 5px; }
+            tr.dates {
+            font-size: 0.75em;
+            background-color: #dfdfdf;
+            color: #111111;
+            }
+            
+          
+                
+                Mirage OS »
+        
+        The cloud has so far mostly been used to consolidate existing operating systems
+and manage them more conveniently. The interface between guest kernels,
+applications and VMs are all managed very differently, leading to serious
+inefficiencies, unreliability and insecurity.  Mirage
+OS revisits the library OS concept (built here as
+Nemesis
+in the late '90s), and narrows the gap between safe, high-level programming,
+and low-level systems construction.
+Applications are written in high-level OCaml and compiled directly into
+microkernels that run on the Xen hypervisor. By treating the hypervisor as a
+stable hardware platform, we can focus on high-performance protocol
+implementations without worrying about having to support the thousands of
+device drivers found in a traditional OS.  Although Mirage initially targets
+the Xen hypervisor, other backends, such as a FreeBSD kernel module and
+Javascript, also exist.
+Mirage includes clean-slate functional implementations of protocols ranging
+from TCP/IP, DNS, SSH, Openflow (switch/controller), HTTP, XMPP and Xen
+inter-VM transports. Some of the new applications we're building using Mirage
+include the next-generation Xen Cloud
+Platform (a widely deployed
+open-source Xen distribution), dubbed Project
+Windsor.
+
+        
+                    2013           2014           2015          ∞
+                          
+               Irmin 1.0                                   
+               Home Router                                   
+               LVM-compatible block device                                   
+               Jitsu toolstack                                   
+               Moana ML                                   
+               OCaml TLS                                   
+               Polyversal TCP prototype                                   
+               Xen/ARMv7 port                                   
+               Mirage 2.0                                   
+               TCP/IP Stack                                   
+               kFreeBSD                                   
+               Mirage 1.0                                   
+               Graphing                                   
+               Mirage 0.9                                   
+               Mirari                                                  Nigori                                   
+               Signpost prototype                                   
+               Xen.org incubation                                   
+               Unikernel Mirage prototype                 
+         
+        
+      
+        
+                        table { 
+            table-layout: fixed;
+            border-spacing: 0px 2px;
+            }
+            .blank { background-color: #fefefe; }
+            .planning { font-size: 80%; background-color: #bbccee; }
+            .doing { font-size: 80%; background-color: #eeeebb; }
+            .complete { font-size: 80%; background-color: #bbddbb; }
+            img.mugshot { float:left; padding-right: 5px; }
+            tr.dates {
+            font-size: 0.75em;
+            background-color: #dfdfdf;
+            color: #111111;
+            }
+            
+          
+                
+                Community Outreach »
+        
+        Growing a language community is more than just technology; we also need a
+better online presence, documentation and educational material. We're working
+on an O'Reilly book about practical OCaml programming, as well as a comprehensive
+revamp of the website to include features such as the interactive TryOCaml Javascript toplevel.
+Much of this work is done in collaboration with members
+of the wider OCaml community such as Ashish Agarwal and Christophe Troestler, and not just from the Cambridge group.
+
+        
+                    2013           2014           2015          ∞
+                                         Compiler Hacking Evenings                                                  L28: Advanced FP                                                  2048 in js_of_ocaml                                   
+               Markdown processor                                                  FPDays tutorial                                   
+               Real World OCaml                                   
+               OCaml.org redesign                                   
+               MPP                                   
+               Book review site                                   
+               OCaml.org infrastructure                                   
+               Raspberry OCaml                 
+         
+        
+       
+
+© 2012-2013 Anil MadhavapeddyInformation provided by Anil Madhavapeddy
+

@@ -1,0 +1,242 @@
+Computer Laboratory – OCaml Labs: Papers    a.icon-github {
+	background: url(../github.png) no-repeat 0 0;
+	padding: 0 0 2px 2em;
+    }
+    a.icon-cloud {
+	background: url(../cloud.png) no-repeat 0 0;
+        background-size: 17px;
+	padding: 0 0 2px 2em;
+    }
+    a.icon-bullhorn {
+	background: url(../bullhorn.png) no-repeat 0 0;
+        background-size: 17px;
+	padding: 0 0 2px 2em;
+    }
+    a.icon-wrench {
+	background: url(../wrench.png) no-repeat 0 0;
+        background-size: 17px;
+	padding: 0 0 2px 2em;
+    }
+    
+
+ Skip to content | Access key help   
+  
+
+    
+                Search
+            
+      
+
+      
+    
+
+  Advanced searchA–ZContact us
+  
+
+
+Computer Laboratory
+
+
+ 
+University of CambridgeComputer LaboratoryOCaml LabsPapersOCaml LabsNewsBlogsProjectsPapersPeopleCollaborationContact UsOCaml Labs     Publications
+     
+              
+       Declarative Programming over Eventually Consistent Data Stores
+              Download
+              KC Sivaramakrishnan, Gowtham Kaki and Suresh Jagannathan
+              in 36th annual ACM SIGPLAN conference on Programming Language Design and Implementation, Jun 2015
+       
+      
+              
+       Jitsu: Just-In-Time Summoning of Unikernels
+              Download
+              Anil Madhavapeddy, Thomas Leonard, Magnus Skjegstad, Thomas Gazagnaire, David Sheets, Dave Scott, Richard Mortier, Amir Chaudhry, Balraj Singh, Jon Ludlam, Jon Crowcroft and Ian Leslie
+              in 12th USENIX Symposium on Networked System Design and Implementation, May 2015
+       
+      
+              
+       Personal Data: Thinking Inside the Box
+              Download
+              Hamed Haddadi, Heidi Howard, Amir Chaudhry, Jon Crowcroft, Anil Madhavapeddy, Richard Mortier
+              in arXiv:1501.04737, Jan 2015
+       
+      
+              
+       Raft Refloated: Do We Have Consensus?
+              Download
+              Heidi Howard, Malte Schwarzkopf, Anil Madhavapeddy and Jon Crowcroft
+              in ACM SIGOPS Operating System Review special issue on Repeatability and Sharing of Experimental Artifacts, Jan 2015
+       
+      
+              
+       Mergeable Persistent Data Structures
+              Download
+              Benjamin Farinier, Thomas Gazagnaire and Anil Madhavapeddy
+              in Les vingt-sixième Journées Francophones des Langages Applicatifs, Jan 2015
+       
+      
+              
+       Kadupul: Livin' on the Edge with Virtual Currencies and Time-Locked Puzzles
+              Download
+              Magnus Skjegstad, Anil Madhavapeddy and Jon Crowcroft
+              in arXiv:1412.4638, Dec 2014
+       
+      
+              
+       Moana: a case for redefining the internet service abstraction
+              Download
+              Yan Shvartzshnaider and Maximilian Ott
+              in Middleware for Next Generation Internet Computing, Dec 2014
+       
+      
+              
+       Regional Clouds: Technical Considerations
+              Download
+              Jatinder Singh, Jean Bacon, Jon Crowcroft, Anil Madhavapeddy, Thomas Pasquier, W. Kuan Hon, and Christopher Millard
+              in University of Cambridge Computer Laboratory Technical Report, Nov 2014
+       
+      
+              
+       Coeffects: A Calculus of Context-dependent Computation
+              Download
+              Tomas Petricek, Dominic Orchard and Alan Mycroft
+              in International Conference in Functional Programming (ICFP), Sep 2014
+       
+      
+              
+       Multicore OCaml
+              Download
+              Stephen Dolan, Leo White and Anil Madhavapeddy
+              in ACM OCaml Workshop 2014, Sep 2014
+       
+      
+              
+       The OCaml Platform v1.0
+              Download
+              Anil Madhavapeddy, Amir Chaudhry, Jeremie Diminio, Thomas Gazagnaire, Louis Gesbert, Thomas Leonard, David Sheets, Mark Shinwell, Leo White and Jeremy Yallop
+              in ACM OCaml Workshop 2014, Sep 2014
+       
+      
+              
+       The 0install Binary Installation System
+              Download
+              Thomas Leonard
+              in ACM OCaml Workshop 2014, Sep 2014
+       
+      
+              
+       Type-level Module Aliases
+              Download
+              Jacques Garrigue and Leo White
+              in ACM SIGPLAN ML Family Workshop, Sep 2014
+       
+      
+              
+       Metaprogramming with ML modules in the MirageOS
+              Download
+              Anil Madhavapeddy, Thomas Gazagnaire, David Scott and Richard Mortier
+              in ACM SIGPLAN ML Family Workshop, Sep 2014
+       
+      
+              
+       Modular Implicits
+              Download
+              Leo White and Frederic Bour
+              in ACM SIGPLAN ML Family Workshop, Sep 2014
+       
+      
+              
+       Transport Level Security in OCaml
+              Download
+              Hannes Mehnert and David Kaloper Mersinjak
+              in ACM OCaml Workshop 2014, Sep 2014
+       
+      
+              
+       Irmin: a Branch-consistent Distributed Library Database
+              Download
+              Thomas Gazagnaire, Amir Chaudhry, Jon Crowcroft, Anil Madhavapeddy, Richard Mortier, David Scott, David Sheets and Gregory Tsipenyuk
+              in ACM OCaml Workshop 2014, Sep 2014
+       
+      
+              
+       Commercial Users of Functional Programming 2013 Scribe's Report
+              Download
+              Marius Eriksen, Michael Sperber and Anil Madhavapeddy
+              in Journal of Functional Programming, Sep 2014
+       
+      
+              
+       Lightweight higher-kinded polymorphism
+              Download
+              Jeremy Yallop and Leo White
+              in Twelfth International Symposium on Functional and Logic Programming, Jun 2014
+       
+      
+              
+       Unikernels: the Rise of the Virtual Library Operating System
+              Download
+              Anil Madhavapeddy and Dave Scott
+              in Communications of the ACM, Jan 2014
+       
+      
+              
+       Real World OCaml: Functional Programming for the Masses
+              Download
+              Yaron Minsky, Anil Madhavapeddy and Jason Hickey
+              in O'Reilly Associated, Nov 2013
+       
+      
+              
+       Trevi: Watering Down Storage Hotspots with Cool Fountain Codes
+              Download
+              George Parisis, Toby Moncaster, Anil Madhavapeddy and Jon Crowcroft
+              in Twelfth ACM Workshop on Hot Topics in Networks (HotNets-XII), Nov 2013
+       
+      
+              
+       Commercial Users of Functional Programming 2012 Workshop Report
+              Download
+              Michael Sperber and Anil Madhavapeddy
+              in Journal of Functional Programming, Nov 2013
+       
+      
+              
+       Lost In the Edge: Finding Your Way With Signposts
+              Download
+              Charalampos Rotsos, Heidi Howard, David Sheets, Richard Mortier, Anil Madhavapeddy, Amir Chaudhry and Jon Crowcroft
+              in USENIX FOCI 2013, Aug 2013
+       
+      
+              
+       Concise analysis using implication algebras for task-local memory optimization
+              Download
+              Leo White and Alan Mycroft
+              in Static Analysis Symposium 2013, Apr 2013
+       
+      
+              
+       Unikernels: Library Operating Systems for the Cloud
+              Download
+              Anil Madhavapeddy, Richard Mortier, Charalampos Rotsos, David Scott, Balraj Singh, Thomas Gazagnaire, Steven Smith, Steven Hand and Jon Crowcroft
+              in ASPLOS 2013, Mar 2013
+       
+      
+              
+       Evolving TCP. How hard can it be?
+              Download
+              Zubair Nabi, Toby Moncaster, Anil Madhavapeddy, Steven Hand, Jon Crowcroft
+              in ACM CoNEXT 2012 Student Workshop, Dec 2012
+       
+      
+              
+       Turning down the LAMP: Software Specialisation for the Cloud
+              Download
+              Anil Madhavapeddy, Richard Mortier, Ripduman Sohan, Thomas Gazagnaire, Steven Hand, Tim Deegan, Derek McAuley and Jon Crowcroft
+              in HotCloud 2010, Jun 2010
+       
+      
+    
+
+© 2012-2013 Anil MadhavapeddyInformation provided by Anil Madhavapeddy
+

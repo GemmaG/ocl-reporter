@@ -1,0 +1,50 @@
+Computer Laboratory – OCaml Labs: Contact Us
+
+ Skip to content | Access key help   
+  
+
+    
+                Search
+            
+      
+
+      
+    
+
+  Advanced searchA–ZContact us
+  
+
+
+Computer Laboratory
+
+
+ 
+University of CambridgeComputer LaboratoryOCaml LabsContact UsOCaml LabsNewsBlogsProjectsPapersPeopleCollaborationContact UsOCaml LabsContact Us
+For day-to-day inquiries about the Labs, please contact us
+directly at the e-mail addresses below, or join the public mailing
+lists.  The ocamllabs-announce is a low-volume mailing list
+for software releases, and ocamllabs-devel covers day-to-day
+development with our external collaborators.
+For a low-volume mailing list, join the announcements list below. 
+Day-to-day notices and 
+development will be on the ocamllabs-devel list, and the Mirage OS
+mailing list is for that particular project.
+
+  People
+  Anil Madhavapeddy
+  Alan Mycroft
+  Ian Leslie
+  Jon Crowcroft
+
+  Mailing List
+  OCamlLabs-announce
+  OCamlLabs-devel
+  Mirage-devel
+  OCaml.org lists
+
+
+
+
+
+© 2012-2013 Anil MadhavapeddyInformation provided by Anil Madhavapeddy
+

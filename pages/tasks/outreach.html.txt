@@ -1,0 +1,298 @@
+Computer Laboratory – OCaml Labs: Community Outreach    a.icon-github {
+	background: url(../github.png) no-repeat 0 0;
+	padding: 0 0 2px 2em;
+    }
+    a.icon-cloud {
+	background: url(../cloud.png) no-repeat 0 0;
+        background-size: 17px;
+	padding: 0 0 2px 2em;
+    }
+    a.icon-bullhorn {
+	background: url(../bullhorn.png) no-repeat 0 0;
+        background-size: 17px;
+	padding: 0 0 2px 2em;
+    }
+    a.icon-wrench {
+	background: url(../wrench.png) no-repeat 0 0;
+        background-size: 17px;
+	padding: 0 0 2px 2em;
+    }
+    
+
+ Skip to content | Access key help   
+  
+
+    
+                Search
+            
+      
+
+      
+    
+
+  Advanced searchA–ZContact us
+  
+
+
+Computer Laboratory
+
+
+ 
+University of CambridgeComputer LaboratoryOCaml LabsProjectsCommunity OutreachOCaml LabsNewsBlogsProjectsPapersPeopleCollaborationContact UsOCaml Labs    ContentsCommunity OutreachTeamTasksCompiler Hacking EveningsL28: Advanced FP2048 in js_of_ocamlMarkdown processorFPDays tutorialReal World OCamlOCaml.org redesignMPPBook review siteOCaml.org infrastructureInfrastructureRaspberry OCaml
+    
+    
+                        table { 
+            table-layout: fixed;
+            border-spacing: 0px 2px;
+            }
+            .blank { background-color: #fefefe; }
+            .planning { font-size: 80%; background-color: #bbccee; }
+            .doing { font-size: 80%; background-color: #eeeebb; }
+            .complete { font-size: 80%; background-color: #bbddbb; }
+            img.mugshot { float:left; padding-right: 5px; }
+            tr.dates {
+            font-size: 0.75em;
+            background-color: #dfdfdf;
+            color: #111111;
+            }
+            
+          
+    Community Outreach
+    Growing a language community is more than just technology; we also need a
+better online presence, documentation and educational material. We're working
+on an O'Reilly book about practical OCaml programming, as well as a comprehensive
+revamp of the website to include features such as the interactive TryOCaml Javascript toplevel.
+Much of this work is done in collaboration with members
+of the wider OCaml community such as Ashish Agarwal and Christophe Troestler, and not just from the Cambridge group.
+
+    Team
+    
+    Tasks
+            2013           2014           2015          ∞
+                                     Compiler Hacking Evenings                                                  L28: Advanced FP                                                  2048 in js_of_ocaml                                   
+               Markdown processor                                                  FPDays tutorial                                   
+               Real World OCaml                                   
+               OCaml.org redesign                                   
+               MPP                                   
+               Book review site                                   
+               OCaml.org infrastructure                                   
+               Raspberry OCaml                 
+     
+    
+  
+    
+                  Compiler Hacking Evenings
+           Complete by Jeremy Yallop (Aug 2013 -) Blog Post   Mailing List   
+         The OCaml Labs compiler hacking sessions bring together around twenty people
+from OCaml Labs, the wider Computer Lab, and various companies around Cambridge
+for an enjoyable few hours to learn about and improving the OCaml compiler
+toolchain, fuelled by free pizza.  They run roughly every couple of months,
+with the results written up on the compiler hacking
+blog.
+The location moves around Cambridge; we have been in the Computer Lab, Citrix,
+the Makespace, and the Postdoc Centre on various occasions. We benefited from
+the presence of a few experienced compiler hackers, but for many of us it was
+the first attempt to modify the OCaml compiler internals.
+If you are in the Cambridge area, please do feel to drop in!  There is a
+mailing list to stay
+informed of future events.
+
+         
+      
+                  L28: Advanced FP
+           Complete by Jeremy Yallop (Jun 2014 - May 2015) Course Page   F-omega interpreter   
+         The L28 Advanced Functional Programming course is a masters-level course in the
+Cambridge Computer Laboratory.  This module aims to teach students how to use
+the features of modern typed functional programming languages (e.g. OCaml,
+Haskell) to design and implement libraries and DSLs. It aims to demonstrate how
+such techniques can improve both correctness and efficiency.
+Students wishing to take the module should have some experience of a typed
+functional programming language and an understanding of type inference.
+
+         
+      
+                  2048 in js_of_ocaml
+           Complete by Jeremy Yallop (Jun 2014 - Jan 2015) Github   ICFP tutorial   Functional Conf Bangalore   Online Demo   
+         The aim of this tutorial is to write an implementation of the popular game
+It will be written in pure OCaml and compiles into JavaScript that runs
+interactively in a browser on the client-side.
+
+The basic types and stub functions are provided, along with a suite of failing
+tests and a front-end that runs the game in a browser. 
+See the instructions for
+more details on the tasks.
+This tutorial was run in ICFP 2014 in Sweden, and FuConf 2014 in India.  Please
+feel free to use it for your own OCaml tutorials, and let us know if you do so that
+we can record it here.
+
+         
+      
+                  Markdown processor
+           Complete by Philippe Wang (Jun 2013 - Dec 2014) OMD   
+         Much of the workflow of the Ocaml.org website depends on a solid Markdown
+implementation.  We currently shell out to external processors such as Pandoc,
+but a pure OCaml library would be very helpful in embedding it more naturally
+into the toolchain.  It would also be helpful for the js_of_ocaml integration
+of OCaml in the future.
+
+         
+      
+                  FPDays tutorial
+           Complete by Jeremy Yallop (Jun 2013 - Dec 2013) Prep   Post-mortem   Github   
+         FPDays is a conference held in Cambridge to teach
+functional programming.  We ran an OCaml session there as the first outing for
+Real World OCaml.
+
+         
+      
+                  Real World OCaml
+           Complete by Anil Madhavapeddy (May 2011 - Nov 2013) Homepage   Twitter   
+         Coming soon in 2013 and published by
+O'Reilly Media,
+is the definitive practical guide to programming in
+OCaml.
+This hands-on book will show you how to take advantage of OCaml’s
+functional, imperative, and object-oriented programming styles with
+recipes for many real-world tasks. It covers a range of topics on
+building and maintaining fast, reliable code, with a pragmatic
+emphasis on getting stuff done with community libraries such as Core
+and Async.
+The book starts with OCaml basics, including how to set up a
+development environment, and moves toward more advanced topics such as
+the module system, foreign-function interface, macro language, and the
+ocamlbuild system. By the end of the book, you'll have learned how to
+solve day-to-day problems in data processing, numerical computation,
+system scripting, and database-driven web applications with the OCaml
+multi-paradigm programming language.
+You can see the book's website at
+realworldocaml.org and follow
+@RealWorldOCaml on Twitter.
+
+         
+      
+                  OCaml.org redesign
+           Complete by Amir Chaudhry (Jan 2013 - Nov 2013) OCaml.org   Wiki   Blog   
+         ocaml.org is the public facing website for OCaml.
+A professional agency will be creating a new design for OCaml.org,
+with flexible templates that can be used across other OCaml related
+sites as people wish. This will include branding work for the OCaml
+language itself.
+So far we have:
+Created an initial version of the OCaml Logo for feeddback. You can find
+it on the
+ocaml.org wiki
+Put together wireframes for a complete site redesign. You can read about those on
+Amir's blog post or play with an interactive wireframe demo.
+
+
+         
+      
+                  MPP
+           Complete by Philippe Wang (Apr 2013 - Aug 2013) mpp code   
+         MPP (Meta  PreProcessor) is  a preprocessor that  is designed  to be
+very  customizable,  very simple  to  use and  to  be  used with  most
+programming  languages (e.g.,  OCaml, C/Java,  Ada) and  most document
+description languages  (e.g., HTML, (La)TeX, MarkDown).
+Two fundamental particularities of MPP:
+it allows to embed most programming languages into your project and
+use them as preprocessor languages. This means that the expressiveness
+of MPP is mainly limited  by its users' knowledge of other programming
+languages.
+MPP  is meta  because you  can use it  to produce  a specialized
+preprocessor, which is a feature that is particularly important if you
+want to build and provide a simple preprocessor for non-programmers.
+
+
+Without  MPP,   if  the  language  you're  using   doesn't  provide  a
+specialized preprocessor,  you'd either use no preprocessor  at all or
+build  complex  scripts  to  parse  and  process  your  programmes  or
+documents.
+
+         Related work
+          Real World OCaml
+      
+                  Book review site
+           Complete by Anil Madhavapeddy (Jun 2011 - Mar 2013) Homepage   
+         Online version of the Real World OCaml book. The whole book will be freely readable online under a Creative Commons license. While it is under development, the online version has per-paragraph commenting functionality enabled, with the comments stored as GitHub issues for the authors to manage
+With this system, we hope to engage a lot more people in the review
+process so that the final version of the book can incorporate feedback
+and improvements from the community. Commenting will require a (free)
+GitHub account.
+The book is currently on alpha4 and several hundred comments from reviewers
+have been addressed across the versions.
+
+         Related work
+          Real World OCaml
+      
+                  OCaml.org infrastructure
+           Complete by Anil Madhavapeddy (Aug 2011 - Feb 2013) Wiki   
+         OCaml.org is an infrastructure project as part of creating and
+releasing the OCaml Platform. All of the source code is available from
+the OCaml organisation at GitHub,
+and anyone can fork repositories and
+submit pull requests for consideration by the maintainers.
+We are working on setting up the following sub-domains under
+OCaml.org:
+a public facing site at ocaml.org, and a staging
+server for testing updates before they are pushed live.a mailing list server with public archives, at
+lists.ocaml.org. an opam.ocaml.org site to host the OPAM archives and packages.
+It's useful having a subdomain here to permit
+future DNS load balancing (uk.opam.ocaml.org and so on). git.ocaml.org as a read-only mirror of the Github repositories. oud.ocaml.org for the HotCRP setup for
+the OUD conferences. 
+
+Infrastructure
+
+Discussion about the ocaml.org infrastructure machines should be
+directed to the ocaml.org infrastructure list.
+This is a public, archived mailing list.
+We currently have a single 12-core host
+bactrian.ocamllabs.cl.cam.ac.uk running Debian and Xen. It is
+configured with the following VMs:
+ocaml-mx.ocamllabs.cl.cam.ac.uk is an internal mailing list relay for
+list traffic. The ocaml.org e-mail is handled via the University
+managed domain service,
+and they relay e-mail for lists.ocaml.org
+over to our VM. It runs Mailman
+and Postfix.
+ocaml-www1.ocamllabs.cl.cam.ac.uk is a web server VM. It can virtual
+host multiple non-SSL domains. It current hosts
+realworldocaml.org.
+Please get in touch with Anil if you need something else hosted here,
+`as it has plenty of capacity at the moment.
+ocaml-www2.ocamllabs.cl.cam.ac.uk is another web server VM, currently
+used to host the Mirage
+website. It switches between being a UNIX VM
+or a microkernel, depending on the current state of the Mirage tree.
+
+
+         Related work
+          OCamlot
+      
+                  Raspberry OCaml
+           Complete by Anil Madhavapeddy (Nov 2012 - Feb 2013) Bug report   Jane Street blog   
+         The Raspberry Pi has an ARMv6 processor, and there are two main distributions available. 
+Debian wheezy is compiled with soft float (which emulates floating point) and is fairly compatible with most software.
+The Raspbian distribution is recompiled to take advantage of hard float, which is faster but requires a new set of binary packages.
+Soft-float Debian: If you use soft-float Debian, there is a nice guide available on the Jane Street OCaml blog blog on how to bootstrap the native code OCaml compiler on it.
+The standard binary packages included with Debian will also work fine.
+Hard-float Raspbian: Once you have Raspbian installed, the byte-code ocamlc compiler will work, but the ocamlopt native code compiler doesnt work out of the box.
+This is due to differences in the ARMv6 and ARMv7 instruction setsa
+.The Raspbian distribution uses a calling convention called VFPE2 to handle floating point, and OCaml doesn't recognise it by default.
+Luckily, the issue has been fixed upstream in the OCaml compiler, and will appear in version 4.00.2.
+Meanwhile, you can download precompiled debs with this patch by adding the following to /etc/apt/sources.list:
+deb http://www.cl.cam.ac.uk/~lpw25/ocaml-rpi/ wheezy main
+deb-src http://www.cl.cam.ac.uk/~lpw25/ocaml-rpi/ wheezy main
+
+Alternatively, you can also use OPAM to compile a custom compiler (see the Jane Street blog post above for instructions on how to install OPAM):
+$ opam switch 4.00.1+raspberrypi
+$ eval `opam config -env`
+
+This compiler should work on Raspbian with no issues.
+Many thanks to Jeffery Scofield for all this help with this patch!
+
+         
+      
+  
+
+© 2012-2013 Anil MadhavapeddyInformation provided by Anil Madhavapeddy
+

@@ -1,0 +1,371 @@
+Computer Laboratory – OCaml Labs: Mirage OS    a.icon-github {
+	background: url(../github.png) no-repeat 0 0;
+	padding: 0 0 2px 2em;
+    }
+    a.icon-cloud {
+	background: url(../cloud.png) no-repeat 0 0;
+        background-size: 17px;
+	padding: 0 0 2px 2em;
+    }
+    a.icon-bullhorn {
+	background: url(../bullhorn.png) no-repeat 0 0;
+        background-size: 17px;
+	padding: 0 0 2px 2em;
+    }
+    a.icon-wrench {
+	background: url(../wrench.png) no-repeat 0 0;
+        background-size: 17px;
+	padding: 0 0 2px 2em;
+    }
+    
+
+ Skip to content | Access key help   
+  
+
+    
+                Search
+            
+      
+
+      
+    
+
+  Advanced searchA–ZContact us
+  
+
+
+Computer Laboratory
+
+
+ 
+University of CambridgeComputer LaboratoryOCaml LabsProjectsMirage OSOCaml LabsNewsBlogsProjectsPapersPeopleCollaborationContact UsOCaml Labs    ContentsMirage OSTeamTasksIrmin 1.0Home RouterLVM-compatible block deviceJitsu toolstackMoana MLOCaml TLSPolyversal TCP prototypeXen/ARMv7 portMirage 2.0TCP/IP StackkFreeBSDMirage 1.0GraphingMirage 0.9MirariNigoriSignpost prototypeXen.org incubationUnikernel Mirage prototype
+    
+    
+                        table { 
+            table-layout: fixed;
+            border-spacing: 0px 2px;
+            }
+            .blank { background-color: #fefefe; }
+            .planning { font-size: 80%; background-color: #bbccee; }
+            .doing { font-size: 80%; background-color: #eeeebb; }
+            .complete { font-size: 80%; background-color: #bbddbb; }
+            img.mugshot { float:left; padding-right: 5px; }
+            tr.dates {
+            font-size: 0.75em;
+            background-color: #dfdfdf;
+            color: #111111;
+            }
+            
+          
+    Mirage OS
+    The cloud has so far mostly been used to consolidate existing operating systems
+and manage them more conveniently. The interface between guest kernels,
+applications and VMs are all managed very differently, leading to serious
+inefficiencies, unreliability and insecurity.  Mirage
+OS revisits the library OS concept (built here as
+Nemesis
+in the late '90s), and narrows the gap between safe, high-level programming,
+and low-level systems construction.
+Applications are written in high-level OCaml and compiled directly into
+microkernels that run on the Xen hypervisor. By treating the hypervisor as a
+stable hardware platform, we can focus on high-performance protocol
+implementations without worrying about having to support the thousands of
+device drivers found in a traditional OS.  Although Mirage initially targets
+the Xen hypervisor, other backends, such as a FreeBSD kernel module and
+Javascript, also exist.
+Mirage includes clean-slate functional implementations of protocols ranging
+from TCP/IP, DNS, SSH, Openflow (switch/controller), HTTP, XMPP and Xen
+inter-VM transports. Some of the new applications we're building using Mirage
+include the next-generation Xen Cloud
+Platform (a widely deployed
+open-source Xen distribution), dubbed Project
+Windsor.
+
+    Team
+    
+    Tasks
+            2013           2014           2015          ∞
+                      
+               Irmin 1.0                                   
+               Home Router                                   
+               LVM-compatible block device                                   
+               Jitsu toolstack                                   
+               Moana ML                                   
+               OCaml TLS                                   
+               Polyversal TCP prototype                                   
+               Xen/ARMv7 port                                   
+               Mirage 2.0                                   
+               TCP/IP Stack                                   
+               kFreeBSD                                   
+               Mirage 1.0                                   
+               Graphing                                   
+               Mirage 0.9                                   
+               Mirari                                                  Nigori                                   
+               Signpost prototype                                   
+               Xen.org incubation                                   
+               Unikernel Mirage prototype                 
+     
+    
+  
+    
+                  Irmin 1.0
+           In Progress by Thomas Gazagnaire (Mar 2013 -) JFLA 2015 paper   OCaml 2014 poster   Github   Github   Blog (part 1)   Blog (part 2)   
+         Irmin is a distributed filesystem and block store that follows the same
+design principles as Git.  The design consists of three
+main components:
+a low-level immutable and consistent key/value data-storea DAG persisted in that datastore; anda tag store which associate names to keys of the low-level data-store.
+
+Irmin is written in pure OCaml, and can thus be compiled to a variety of
+backends (including Javascript, and Mirage
+microkernels). Unlike the git frontend, applications can directly iterate over
+the object graph.
+The immutability of the low-level block store makes it significantly easier to
+apply replication and network coding techniques to improve resilience via
+replication, and to optimise scheduling across many hosts.
+
+         
+      
+                  Home Router
+           In Progress by Mindy Preston (Jan 2015 -) Github   
+         Now that Mirage 2.0 has support for the ARMv7 platform and the Jitsu virtual
+machine toolstack, we are building the missing libraries needed to turn a
+Cubieboard2 into a home router.  This includes NAT, uPnP and HTTP proxies built
+as unikernels.
+
+         
+      
+                  LVM-compatible block device
+           In Progress by Dave Scott (Oct 2014 -) Github   
+         A logical volume manager allows you to group together multiple physical disks
+(volumes) and treat them as a pool of disk blocks, from which you can allocate
+multiple logical disks (volumes).
+This pure OCaml implementation uses the same on-disk format as Linux LVM with
+the following features:
+constant-time volume manipulationlinear-mapped logical volumes
+
+It provides an mlvm command-line interface to use the library under Unix.
+
+         
+      
+                  Jitsu toolstack
+           Complete by Magnus Skjegstad (May 2014 - May 2015) Paper   Github   
+         Network latency is a problem for all cloud services. It can be mitigated by
+moving computation out of remote datacenters by rapidly instantiating local
+services near the user. This requires an embedded cloud platform on which to
+deploy multiple applications securely and quickly.
+Jitsu is a new Xen toolstack that satisfies the demands of secure multi-tenant
+isolation on resource-constrained embedded ARM devices.  It does this by using
+unikernels: lightweight, compact, single address space, memory-safe virtual
+machines (VMs) written in a high-level language. Using fast shared memory
+channels, Jitsu provides a directory service that launches unikernels in
+response to network traffic and masks boot latency.
+The USENIX NSDI paper evaluation shows Jitsu to be a power-efficient and
+responsive platform for hosting cloud services in the edge network while
+preserving the strong isolation guarantees of a type-1 hypervisor.
+
+         
+      
+                  Moana ML
+           In Progress by Yan Shvartzshnaider (Aug 2014 - Apr 2015) Github   Mozilla Ignite Blog   Summary Blog   Paper   
+         Moana, an information-centric middleware for distributed services and
+applications. Moana offers a shared graph-based storage abstraction through
+which applications communicate with each other by appending and observing the
+shared graph.
+Moana supports two basic operations of ADD and MAP; add allows an application
+to persistently extend the global graph, and map provides a dynamically
+maintained mapping of the global graph to an application specific, internal
+sub-graph. MoanaML is a pure OCaml implementation of this abstraction to make
+it suitable for use in MirageOS unikernels.
+
+         
+      
+                  OCaml TLS
+           Complete by Hannes Mehnert (Jan 2014 - Mar 2015) Paper   Github   BitCoin Pinata   Video   
+         Transport Layer Security (TLS) is probably the most widely deployed security
+protocol on the Internet. It is used to setup virtual private networks, secure
+various services such as web and email, etc. For MirageOS, we developed a clean
+slate TLS implementation developed in OCaml. Our motivating goals are
+reliability, robustness, and API conciseness.
+A BitCoin Pinata was issued in Feb 2015 to help
+publically audit the end-to-end TLS and MirageOS stack.
+
+         
+      
+                  Polyversal TCP prototype
+           In Progress by Vsevolod Stakhov (Oct 2012 - Feb 2015) Github   Position paper   
+         Over the last decade TCP has become the de facto "narrow waist" of the Internet;
+a one-size-fit-all transport that is poorly suited to the needs of modern
+applications. As middle-boxes have become ubiquitous, it has become nigh
+impossible for alternative transports to exist, and so application developers
+have come to view opening a TCP socket as the only reliable way to connect to a
+server. Some recent proposals circumvent this problem by camouflaging new
+transports so that they appear like TCP to middleboxes.
+Polyversal TCP aims to unify many different strands of TCP to make it suitable
+to work as an extensible one-size-fits-all transport that can take advantage
+of heterogenous interconnects such as shared memory or virtual machine channels.
+This will in turn greatly simplify the construction of complex distributed systems
+being built elsewhere in OCaml Labs.
+
+         
+      
+                  Xen/ARMv7 port
+           Complete by Thomas Leonard (Feb 2014 - Sep 2014) Github   Blog Post   Paper   
+         The ARMv7 architecture introduced the (optional) Virtualization Extensions,
+providing hardware support for running virtual machines on ARM devices, and
+Xen's ARM Hypervisor uses this to support hardware accelerated ARM guests.
+Mini-OS is a tiny OS kernel designed specifically for running under Xen. It
+provides code to initialise the CPU, display messages on the console, allocate
+memory (malloc), and not much else. It is used as the low-level core of
+Mirage's Xen implementation.
+Mirage v1 was built on an old version of Mini-OS which didn't support ARM. For
+Mirage v2, we have added ARM support to the current Mini-OS (completing Karim
+Allah Ahmed's initial ARM port) and made Mirage depend on it as an external
+library. This means that Mirage will automatically gain support for other
+architectures that get added later. We are currently working with the Xen
+developers to get our Mini-OS fork upstreamed into Xen 4.5 and 4.6.
+
+         
+      
+                  Mirage 2.0
+           Complete by Anil Madhavapeddy (Nov 2013 - Aug 2014) Github   Announcement   Paper   
+         The MirageOS 2.0 release included a number of new features:
+ARM device supportIrmin distributed, branchable storageOCaml TLSModular communication
+
+There is more detail of all of these activies on the Mirage 2.0 announcement.
+
+         
+      
+                  TCP/IP Stack
+           Complete by Balraj Singh (Apr 2013 - Mar 2014) 
+         The TCP/IP stack in Mirage 1.0 was functional, but lacked support for modern
+TCP extensions.  We have now extended the TCP stack to include more congestion
+controllers, better ACK handling, a more compete state machine, and extensions
+such as window scaling.  These all contribute to making Mirage 2.0 unikernels
+more robust Internet servers.
+
+         
+      
+                  kFreeBSD
+           Complete by Gabor Pali (Jun 2013 - Dec 2013) Github   Bug report   
+         
+         
+      
+                  Mirage 1.0
+           Complete by Anil Madhavapeddy (Jun 2013 - Nov 2013) Github   Announcement   Homepage   
+         The first release of Mirage 1.0 has the goal of self-hosting infrastructure running on Xen (ideally on Amazon EC2 or Rackspace), and a set of tools to make it easy to extend the system with new backends and device drivers.  See the announcement blog post for more.
+
+         
+      
+                  Graphing
+           Complete by Daniel Bünzli (Apr 2013 - Aug 2013) Gg library   Vg library   
+         Vg is a declarative 2D vector graphics library for OCaml. It's a
+baseline library with multiple output backends like PDF, SVG or the
+HTML5 Canvas element. This project aims to build a "Tufte principled"
+2D visualization library with some simple graphing widgets for data
+visualisation.  In the longer term, the intention is to build a
+declarative UI framework also.
+
+         Related work
+          Real-time templating
+      
+                  Mirage 0.9
+           Complete by Dave Scott (Jan 2013 - Jul 2013) Github   Meeting Minutes   
+         The Mirage developer preview aims to be a stable release of the Mirage tools
+and libraries in OPAM, and a simple (tested) "Getting started guide" on the
+wiki.
+The three target applications are to build and run:
+a self-hosting website and DNS server (without SSL)stub-domains for xenstore and xenconsoled, demonstrating how mirage can be used to build critical infrastructure.simple distributed system using multiple communicating Mirage instances
+
+         
+      
+                  Mirari
+           Complete by Vincent Bernardoff (Feb 2013 - Jun 2013) Github   Blog   
+         The Mirari prototype has been superseded by the Mirage 2.0 release.
+ This is here for historical reasons.
+Mirari takes a single configuration file and splits the lifecycle of a
+Mirage application into three distinct segments:
+configuration: it scans the config file, checks for any missing OPAM
+ dependencies, and installs them if missing.  It also looks for any
+ filesystem directives and calls mir-crunch to generate the static ML
+ files.  All of this is then glued together into an autogenerated
+ main.ml which is the entry point for the application.
+build: it runs the OCaml build (via Vincent's obuild), and then
+ issues any backend-specific commands (such as the specific link
+ script for the Xen backend, or whatever else we dream up). For
+ convenience, a symlink pointing to the compiled binary will be
+ created in the current working directory.
+run: this is being implemented.  Running a Mirage application is
+ quite stateful: in the case of Xen, we want to monitor the kernel,
+ attach a console, and so on.  Similarly for UNIX, one can imagine
+ the socket version opening up a control channel for Mirari to pass
+ additionnal configuration directives, such as network interfaces.
+ An in the kFreeBSD backend, this would be done via ioctls or other
+ kernel/user interfaces.
+
+
+         
+      
+                  Nigori
+           Complete by Bogdan-Alexandru Matican (Oct 2012 - Jun 2013) Original Nigori paper   
+          
+         
+      
+                  Signpost prototype
+           Complete by Heidi Howard (Aug 2012 - Jun 2013) USENIX FOCI 2013   
+         The defacto architecture of today's Internet services all but removes users'
+ability to establish inter-device connectivity except through centrally
+controlled "cloud" services. Whilst undeniably convenient, the centralised data
+silos of the cloud remain opaque and an attractive target for attackers. A
+range of mechanisms exist for establishing secure peer-to-peer connections, but
+are inaccessible to most users due to the intricacy of their network
+configuration assumptions. Users effectively give up security, privacy and
+(when peers are both on the same LAN) low-latency simply to get something
+useable.  We observe that existing Internet technologies suffice to support
+efficient, secure and decentralized communication between users, even in the
+face of the extreme diversity of edge connectivity and middlebox intervention.
+Signpost is a Mirage-compatible system that explicitly represents individual
+users in a network-wide architecture.  Signpost DNS servers create a “personal
+CDN” for individuals, securely orchestrating the many different available
+techniques for establishing device-to-device connectivity to automatically
+select the most appropriate.  A DNS API gives application compatibility, and
+DNSSEC and DNSCurve bootstraps secure connectivity
+
+         
+      
+                  Xen.org incubation
+           Complete by Amir Chaudhry (Dec 2012 - May 2013) Proposal   Xen.org Mirage Page   
+         The Mirage project is being incubated as an official
+xen.org project. This will give us a neutral
+community ground to continue long-term development of the libraries
+and tools required to turn it into a robust, production-grade
+exokernel.
+To date we have:
+Created a proposal for the Xen communityGone through a formal voting processBeen accepted into the xen.org incubator
+
+The next stage is to continue working with
+Lars on the new xen.org
+properties and public announcements.
+In addition, Xen.org has become a Linux Foundation Collaborative Project and
+MirageOS was prominently mentioned in the
+press release!
+
+         
+      
+                  Unikernel Mirage prototype
+           Complete by Anil Madhavapeddy (Aug 2012 - Mar 2013) ASPLOS 2013   HotCloud 2010   
+         The first Mirage prototype was initially described in the HotCloud 2011 paper, and then
+built and evaluated in the ASPLOS 2013 paper.   During the
+course of the work, we separated our thinking into the general concept of
+unikernels (which are specialised, sealed tasks that can be compiled very
+portably), and the OCaml-based Mirage prototype that comprehensively
+implemented the solution.
+This task resulted in a solid prototype for the evaluation in the paper, but
+further cleanup and documentation is still required to release a public
+version. This continues as part of the Xen.org incubation task.
+
+         
+      
+  
+
+© 2012-2013 Anil MadhavapeddyInformation provided by Anil Madhavapeddy
+

@@ -1,0 +1,371 @@
+OCaml Platform
+    
+    a.icon-github {
+	background: url(../github.png) no-repeat 0 0;
+	padding: 0 0 2px 2em;
+    }
+    a.icon-cloud {
+	background: url(../cloud.png) no-repeat 0 0;
+        background-size: 17px;
+	padding: 0 0 2px 2em;
+    }
+    a.icon-bullhorn {
+	background: url(../bullhorn.png) no-repeat 0 0;
+        background-size: 17px;
+	padding: 0 0 2px 2em;
+    }
+    a.icon-wrench {
+	background: url(../wrench.png) no-repeat 0 0;
+        background-size: 17px;
+	padding: 0 0 2px 2em;
+    }
+    
+  
+    
+    
+    
+            
+            table { 
+            table-layout: fixed;
+            border-spacing: 0px 2px;
+            }
+            .blank { background-color: #fefefe; }
+            .planning { font-size: 80%; background-color: #bbccee; }
+            .doing { font-size: 80%; background-color: #eeeebb; }
+            .complete { font-size: 80%; background-color: #bbddbb; }
+            img.mugshot { float:left; padding-right: 5px; }
+            tr.dates {
+            font-size: 0.75em;
+            background-color: #dfdfdf;
+            color: #111111;
+            }
+            
+          
+    OCaml Platform
+    The OCaml Platform combines the core OCaml compiler with a coherent set of
+libraries, tools and documentation.  The requirements and direction of the
+Platform are initially being guided by large users of OCaml such as Jane
+Street,
+Citrix and
+Lexifi.
+The reason for initially taking direction from industrial users is because
+these companies have a great deal of experience of using the language at scale
+(e.g millions of lines of code, thousands of modules and complicated testing
+requirements). We take a pragmatic view that examining and solving the problems
+such users have will ultimately result in a large and positive impact on the
+wider community, through significantly improved tooling, libraries and
+documentation.
+The current thrust of work is to improve the tooling around packaging, build
+and test infrastructure.  Once complete, this will enable us to effectively
+run over hundreds of community packages and determine selection criteria
+for the Platform.  A key aspect of this selection will be which libraries
+are already popular and in use, and also how actively maintained and portable
+they are across different operating systems.
+The tasks below reflect this by:
+The OPAM package manager acts as the package management front end.The OPAM Doc tool replaces the venerable ocamldoc tool with modern, cross-referenced HTML output across several libraries.The OCamlot testing infrastructure runs continuous integration of OPAM stable and candidate packages across a variety of operating systems and CPU architectures.
+
+The mailing list for discussion about this is platform@lists.ocaml.org (archive).
+
+    Team
+    
+    Tasks
+    
+        2013           2014           2015          ∞
+       
+               
+               Assemblage
+                    
+               
+               OCaml.org governance
+                    
+               
+               OPAM-in-a-box
+                    
+               
+               Docker Builds
+                    
+               
+               Ctypes Stubgen
+                    
+               
+               Codoc 0.2.0
+                    
+               
+               OPAM 1.2
+                    
+               
+               OPAMDoc prototype
+                    
+               
+               OPAM 1.1
+                    
+               
+               OCamlot 0.2.0
+                    
+               
+               Platform Preview
+                    
+               
+               Ctypes 0.1
+                    
+               
+               Non-x86 Machines
+                    
+               
+               OPAM 1.0
+                 
+     
+    
+  
+    
+         
+         Assemblage
+           In Progress by Thomas Gazagnaire (Jun 2014 - Jun 2015) Github   Issues   Paper   Slides   
+         The Assemblage toolbox provides an API and a set of binaries to setup, manage,
+and use OCaml projects.  The library can be used to describe OCaml projects
+with static dependencies.  A project description consists of a list of
+libraries, binaries and/or toplevels, each containing a list of compilation
+units with precise (and static) dependency relationships.
+Using a project description, the tools can generate:
+a .merlin to help edit the project;a Makefile to build the project;a .install to install the project; anda META file to use the project
+
+Assemblage is still a work-in-progress and has not had a public release.
+
+         
+      
+         
+         OCaml.org governance
+           In Progress by Amir Chaudhry (Jul 2014 - Jun 2015) Blog Post   
+         As the projects around the OCaml.org domain name are becoming more
+established, it is important to document how the domain-name itself is being
+governed.  Therefore we have begun to put together a governance framework that
+clarifies the current stakeholders and documents how the domain is currently
+managed.
+The intent is to provide clarity around how things operate in reality, rather
+than being aspirational.  As such we hope it can be adopted without
+introducing burdensome processes, while ensuring that it grow and
+develop as the community does.
+A brief summary of the growth of the projects and the factors that are part of
+the governance document can be found online at: 
+http://amirchaudhry.com/towards-governance-framework-for-ocamlorg/
+
+         
+      
+         
+         OPAM-in-a-box
+           In Progress by Thomas Gazagnaire (Dec 2013 - May 2015) Task ticket   
+         As OPAM gets more widely used for teaching, it's important to make it easy to
+distribute and install on a variety of operating systems.  We are firstly
+generating binary packages for several Linux distributions (via the OpenSUSE
+Build Service and Ubuntu PPAs).  There is also an ongoing effort to package up
+an OPAM environment using virtualisation tools such as Vagrant and Docker.
+See the task ticket for ongoing progress.
+
+         Related work
+          OPAM 1.2
+      
+         
+         Docker Builds
+           In Progress by Anil Madhavapeddy (Jun 2014 - Apr 2015) Github   Output   
+         As the OPAM package database grows beyond 3000 packages, we need automated ways
+of building each package.  This requires not only an OCaml and OPAM
+installation, but also some sandboxing techniques to install external
+dependencies.  For Linux, we are using the Docker
+container manager to perform these builds.  The logs from bulk builds are then
+collected via the Irmin database in order to be classified
+and rendered to a webpage.
+Note that this is a purely Linux-only solution.  While it lets us test various
+distributions such as CentOS, Debian, Ubuntu and RHEL, we still need other
+solutions for MacOS X, Free/Net/OpenBSD and Windows.  That will hopefully get
+easier as the upstream Docker support for non-Linux platforms matures.
+
+         Related work
+          OPAM 1.2
+      
+         
+         Ctypes Stubgen
+           Complete by Jeremy Yallop (Sep 2013 - Mar 2015) Github   Documentation   OCaml 2013 demo   
+         The first Ctypes release used dlopen to dynamically access C libraries, but this
+approach has some limitations
+that will be addressed by also generating C stub files that can be compiled
+using the system C compiler.
+From the Ctypes 0.4
+release onwards, there is comprehensive support for C stub generation that is 
+completely independent of the dynamic libffi-based mode (one mode can be used
+without the other).
+As of early 2015, there are a growing set of OCaml C bindings that use
+Ctypes as their binding generator
+of choice.  These include uses from industrial users such as Citrix, Jane Street and Cryptosense.
+
+         Related work
+          Ctypes
+      
+         
+         Codoc 0.2.0
+           Complete by David Sheets (Apr 2014 - Feb 2015) Blog post   Issues   Codoc   Doc-Ock-Lib   Doc-Ock-XML   Paper   Slides   
+         Codoc aims to provide a widely useful set of tools for generating OCaml
+documentation. In particular, we are striving to:
+Cover all of OCaml's language featuresProvide accurate name resolution and linkingSupport cross-linking between different packagesExpose interfaces to the components we've used to build codocProvide a magic-free command-line interface to the tool itselfReduce external dependencies and default integration with other tools
+
+We haven't yet achieved all of these at all levels of our tool stack but are getting close. codoc 0.2.0 is usable today (if a little rough in some areas like default CSS).  Please see the blog post for more details about its current status.
+
+         
+      
+         
+         OPAM 1.2
+           Complete by Thomas Gazagnaire (Nov 2013 - Oct 2014) Github   Homepage   Developer Manual   Issues   ChangeLog   Release Post   
+         OPAM 1.2 features a streamlined workflow to improve the day-to-day development
+experience, as well as numerous performance and reliability improvements.
+A extended and versatile opam pin command, described here.More expressive queries over the package database, and opam source to quickly clone packages.New metadata fields for describing source repositories, bug-trackers, and finer control of package behaviour.An opam lint command to check the quality of packages.
+
+         Related work
+          Platform Preview
+      
+         
+         OPAMDoc prototype
+           Complete by Vincent Botbol (Jan 2013 - Nov 2013) opam-doc   Snapshot Docs   
+         The OCaml toolchain has shipped with the ocamldoc tool for a long time.
+ocamldoc runs over a single OCaml library and generates cross-referenced
+documentation.  It also supports a variety of outputs, such as Latex, HTML, PDF
+and even manpages.  However, it is starting to show its age for large, complex
+codebases such as Core, and so we are
+developing a more scalable alternative for the Platform effort.
+OPAM-doc consists of two separate commands:
+bin-doc is a replacement for the OCamldoc lexer (which extracts documentation from source code comments. It uses the OCaml-4.00+ facility for generating .cmt files that contain the typed AST, and generates .cmd files which contain the documentation information.  By using a separate file from the AST, we leave open the possibility of having multiple language translations in the future.  These .cmd and .cmdi files can be combined with the .cmt files to generate complete documentation directly from the output of the compiler.  This command is intended to be temporary, and can be integrated into the upstream in the future.
+opam-doc takes a set of cmt and cmd files and outputs a single JSON representation of all the files.  This JSON can then be post-processed (or directly rendered in Javascript) to create a single documentation repository that reliably renders cross-references across entire libraries.  Thus, the entire Platform can have one documentation source rather than having to search across packages.
+
+
+The ultimate aim is to support the OCaml platform with interactive tutorials using the
+js_of_ocaml compiler.  You can try out the prototype
+of this in OPAM via opam install opam-doc && opam doc core async.  It will start a
+local webserver on which you can browse the traffic.  There is also a snapshot available
+on the Mirage documentation site.
+This work is continued in a form intended for upstream inclusion in the compiler
+via the Codoc task.
+
+         Related work
+          Codoc
+      
+         
+         OPAM 1.1
+           Complete by Thomas Gazagnaire (Feb 2013 - Oct 2013) Github   Homepage   Developer Manual   Issues   
+         Since the release of OPAM 1.0, we've steadily been fixing bugs that have been
+reported from the wider userbase.  The release has actually been remarkably
+stable, and most of the issues are around the constraint solver (which tackles
+an NP-complete problem with cunning heuristics).  There's also been quite a bit
+of work on improving portability and integration with the operating system via
+more interactive initialisation.
+The big purpose behind the next release, though, is to improve support for
+large-scale continuous integration and testing of the packages contained within
+the repository.  Jane Street, for example, is
+now issuing weekly releases of their Core
+standard library suite.  Testing these manually across Linux, FreeBSD, MacOS X
+and several CPU architectures (x86, x86_64, ARM, Macppc) is both tedious and
+error-prone, and so we'd like to automate the process.
+OPAM doesn't need many changes to support this testing, but there is more
+package metadata being added to facilitate the process, and tools such as
+oasis2opam help automate
+this by looking inside the packages themselves.  The whole of OPAM is exported
+as a library so that third-party
+packages can interface with the OPAM repository without changing OPAM itself.
+This is exactly what the OCamlot project does.
+
+         Related work
+          OPAM 1.2OCamlot
+      
+         
+         OCamlot 0.2.0
+           Complete by David Sheets (Mar 2013 - Sep 2013) ocamlot-state   ocamlot   Issues   Travis and OPAM   
+         OCamlot (OCaml Online Testing), is a Continuous Integration and Testing
+system for packages provided via OPAM.  It comprises all the
+appropriate tools and libraries to enable management and development of
+the machine infrastructure, for example an OCaml library to interface
+with Github (available through
+OPAM).  If you submit a
+package via OPAM, you will be rewarded with regular regression tests
+across many diverse operating systems and build tool
+environments. Ultimately, we would also like to integrate benchmarking,
+constraint exploration, experimental design, complete isolation, and
+domain testing into this system.
+The resourcing and commissioning of the Machine Pool itself is dealt
+with separately from this software which utilises it.
+Current status: Minimal version 0.2.0 released
+
+         Related work
+          OPAM 1.0Machine Pool
+      
+         
+         Platform Preview
+           Complete by Amir Chaudhry (Jan 2013 - Jul 2013) OCaml 2013 status   Platform mailing list   
+         The OCaml Platform is intended to combine the core OCaml compiler with a
+coherent set of libraries, tools, docs and other resources.  The direction of
+the Platform will be guided by the major users of OCaml (including consortium
+members).
+The first stage of creating the platform is to begin building OCamlot.  This
+process will help us identify and and refine the initial libraries and tools
+that should form part of v0.1 of the platform proper.  When OCamlot is
+complete, we'll be in a much better position to discuss what components should
+form v0.2 of the Platform.
+The current state of the Platform components was also presented at
+OCaml 2013.
+
+         Related work
+          OPAM 1.2OCamlot
+      
+         
+         Ctypes 0.1
+           Complete by Jeremy Yallop (Mar 2013 - Jul 2013) Github   Documentation   
+         ctypes is a library for binding to C libraries using pure OCaml. The primary
+aim is to make writing C extensions as straightforward as possible.  The current
+FFI in OCaml is low-level and difficult to use correctly, so we're keen to improve the
+ease-of-interoperability in the first Platform release.
+The core of ctypes is a set of combinators for describing the structure of C
+types -- numeric types, arrays, pointers, structs, unions and functions. You
+can use these combinators to describe the types of the functions that you want
+to call, then bind directly to those functions -- all without writing or
+generating any C!
+
+         
+      
+         
+         Non-x86 Machines
+           Complete by Anil Madhavapeddy (Nov 2012 - Jun 2013) 
+         In order to create a robust and stable Continuous Integration system, we
+need a pool of machines that reflect the diverse environments where
+OCaml code is deployed.
+To this end, we've been assembling a small collection of conventional
+high-powered machines that can build the whole OPAM package set quite
+quickly, and also more unusual CPU architectures and operating systems
+that will help developers that don't have access to them. So far we
+have:
+12-core AMD64/Linux Debian 64-bit12-core AMD64/Linux Debian 32-bitARMv6l/Raspbian Linux 32-bit (Raspberry Pi 512MB)ARMv5tel/Debian Linux 32-bit (Dreamplug)sparc64/FreeBSD (thanks to Jasper Wallace for the donation)macppc/OpenBSD (G4 Powerbook) (thanks to Dave Scott for the donation)AMD64/MacOS X 10.8iMac G5/Debian Linux 64-bit
+
+         Related work
+          OCamlot
+      
+         
+         OPAM 1.0
+           Complete by Thomas Gazagnaire (Mar 2012 - Mar 2013) Github   Homepage   Developer Manual   Issues   
+         OPAM 1.0 is a source-based package manager for OCaml. It supports multiple
+simultaneous compiler installations, flexible package constraints, and a
+Git-friendly development workflow.
+The goal of the first version of OPAM was to get something released that would
+provide basic package management facilities to the community, but also be
+designed with distributed open-source design in mind.  To that end, OPAM 1.0
+supports a
+remotes
+mechanism which lets you combine local development trees with other people's
+remote Git or Darcs repositories.  Whenever opam update is run, all the
+remotes are refreshed and merged, letting you subscribe to other people's
+compilers and package trees.
+This first version is build-system agnostic in the interests of compatibility
+with the large existing body of third party external source code, and so can't
+do much in the way of advanced manipulation of the packages.
+OPAM 1.0 has been a great success.  Since its release, there have been hundreds
+of external contributions from the community, and over 500 packages are now
+contained within the main package repository!
+
+         Related work
+          OPAM 1.1
+      
+  

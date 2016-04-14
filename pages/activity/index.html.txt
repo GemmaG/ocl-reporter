@@ -1,0 +1,321 @@
+Computer Laboratory – OCaml Labs: Activity  blockquote {
+    margin-left: 10px;
+    padding-left: 20px;
+    width: 80%;
+    color: #330000;
+  } 
+  div.changelog { width:80%; font-size:90%; }
+  blockquote p { margin-left: 0;  }
+  div.ocl p { width: 75%; min-width: 400px; }
+  div.ocl a { color: #330099; } 
+  .ocl-output {
+   width: 75%;
+   padding:.4em 0;
+   margin:0 0 1em 0;
+   border-bottom: 1px solid #cccccc;
+  }
+  .ocl-cogs span { padding-right:30px; background-size:20px; background: url(../cogs.png) no-repeat right center; }
+  .ocl-print span { padding-right:30px; background-size:20px; background: url(../print.png) no-repeat right center; }
+  .ocl-cloud span { padding-right:30px; background-size:20px; background: url(../cloud.png) no-repeat right center; }
+  .ocl-group span { padding-right:30px; background-size:20px; background: url(../group.png) no-repeat right center; }
+  .ocl-bullhorn span { padding-right:30px; background-size:20px; background: url(../bullhorn.png) no-repeat right center; }
+  .ocl-asset span { padding-right:30px; background-size:20px; background: url(../wrench.png) no-repeat right center; }
+  
+
+ Skip to content | Access key help   
+  
+
+    
+                Search
+            
+      
+
+      
+    
+
+  Advanced searchA–ZContact us
+  
+
+
+Computer Laboratory
+
+
+ 
+University of CambridgeComputer LaboratoryOCaml LabsActivityOCaml LabsProjectsPeopleActivityCollaborationContact UsOCaml Labs    The OCaml Labs staff work on research activities, but also maintain code and help with 
+    community activities. This page lists recent activities ordered by date. Click on any of
+    them to visit the project page and get more detail on what's going on.  If you want to
+    know more or help out, feel free to get in touch any time.
+    
+      Feb 2013
+       
+             8 Feb 2013: 
+    Released mirage-platform-0.7.2 of  mirage-platform (more)  8 Feb 2013: 
+    Released mirage-net-0.5.2 of  mirage-net (more)  8 Feb 2013: 
+    Released ocaml-cstruct-0.6.2 of  ocaml-cstruct (more)  1 Feb 2013: 
+    Released 0.9.2 of  opam (more) 
+      
+      
+      Jan 2013
+      January's update is broken down into the three overall themes of OCaml Labs, specifically, Platform, Systems and Compiler projects with some additional points at the end. In general, there seems to be more interest than expected in the work we're doing and the number of collaborative projects is increasing. We need to do more work on the reporting structure but it would be useful to have some feedback on what you would find most useful. Please do get in touch if you have comments.
+We held the first of the monthly meetings last Friday, in the Computer Lab.Anil provided an overview of the research work that OCaml Labs is involved with and the updates are also described below. An interesting theme of the discussion that followed was related to undergraduate teaching and how things like the OCaml Platform and infrastructure would make it easier for students to get to grips with programming.
+For the evening after the meeting, Amir set up an informal OCaml hacking/tutorial session in Cambridge. Around 15 eager people attended the event in Makespace (a community workshop), with most of them being new to the language. Anil introduced Real World OCaml and shared the introductory chapters while Thomas provided help with OPAM. This turned out to be a great test of the installation process for newcomers to OCaml, as well as the book's instructions. A number of issues came to light, partly related to a perfect storm of package issues, which everyone is keen to improve. Despite these problems, attendees were very positive and were keen to see more gatherings like this in future. When Amir asked for feedback, pretty much everyone commented on how great the pizza was.
+Platform projects
+OCaml Labs also hosted its first visitor this month.Thomas Gazagnaire, lead developer of the popular OPAM package manager and CTO of OCamlPro, spent three weeks in Cambridge. Much effort was put into preparing Mirage for release, discussions about parallelism and the OCaml Platform. In fact, anything where OPAM is a crucial component. This was a great productivity boost and we look forward to future visits, both from Thomas and others. An item worth noting is that (at time of writing) the opam-repository has now become the overall most forked OCaml project on Github.The Platform mailing list has also been formed for discussion regarding the OCaml Platform. Anyone interested in the discussions about the platform, which will include development on OPAM, should join this list.
+Part of the Platform work involves creating a new design for OCaml.org, which also kicked-off this week.Amir will keep people updated about progress via updates to the OCL website, Infrastructure mailing list and also by posting things to the OCaml.org Github wiki. The current stage of work involves thinking of the types of pages OCaml.org requires, in order to refine the templates we need. As part of this, we also commissioned a new logo for OCaml and although it's still under development, you can see the latest draft on the OCaml.org wiki. Please send any feedback directly to Amir.
+The Real World OCaml book website was released as a limited alpha earlier in the month, with the aim of getting early feedback and comments. Each paragraph of the online book has commenting functionality, using Github issues as a backend. This means that each comment made on the book website creates a new issue on Github, which authors/commenters can track and discuss before editing the content. So far there have been over 250 comments on the alpha, with half them being dealt with already.
+A new EU project also kicked-off, called Trilogy 2, which builds on the previous, award-winning work from the original Trilogy project. This is especially relevant for OCaml Labs as OnApp (a member of Trilogy 2), will be providing Cloud Infrastructure for ocaml.org. We look forward to seeing this develop.
+Systems research
+Mirage was formally proposed as an incubated Xen.org project and the proposal was put forward for community review. There were many positive comments on the Xen mailing lists (along the lines of "Mirage is cool stuff") and voting is currently underway by eligible members of the Xen community. Assuming a positive outcome, incubation would give the Mirage project greater visibility and access to resources. This would accelerate progress towards an alpha release in Q1/Q2 this year. In addition to this, a proposal for an OSCON talk was also submitted and the camera-ready version of the ASPLOS paper is now available.
+A related research topic where Mirage could be useful is in embedded systems and the Internet of Things. One specific use case is the Illuminate Project, where Mirage can be used to create appliances running on the ARM microcontrollers alongside an LED lighting network. Such a lighting system is now deployed in large parts of the Computer Laboratory and will form an excellent test-bed to explore these ideas further.
+Signpost is also achieving greater outreach with Jon Crowcroft discussing such technologies at a meeting in Dagstul on Decentralized Systems for Privacy Preservation.
+Compiler projects
+Several mailing lists are in progress for various community-driven projects. The first of these is a working group on the future of syntax extensions in OCaml, beyond camlp4 ( wg-camlp4). This group is chaired by Alain Frisch and Leo White and has generated a great deal of discussion in the last two weeks. Leo is summarising his thoughts in a series of blog posts as he goes.
+Further working groups on parallelism in OCaml and build systems are under discussion and will be announced in due course.
+One more thing ... (actually three)
+As well as all the research and development activity we've also been recruiting. We've had several rounds of interviews and made a number of offers so hopefully we'll be announcing new members of the OCaml Labs team in the coming months. In addition, we'd also like to mention that Leo successfully defended his PhD Thesis in January. Finally, we'd like to welcome a new honorary member of OCaml Labs, Nathan Scott, born on 30th January. Congratulations Dave!
+
+             31 Jan 2013: 
+    Updated  Design and Content of OCaml.org (more)  25 Jan 2013: 
+    Updated  Design and Content of OCaml.org (more)  20 Jan 2013: 
+    Paper accepted  Unikernels: Library Operating Systems for the Cloud (more)  17 Jan 2013: 
+    Talked on   Software networking for the Internet of Things  (more)  15 Jan 2013: 
+    Released ocaml-cow-0.5.2 of  ocaml-cow (more)  15 Jan 2013: 
+    Released 0.9.1 of  opam (more)  14 Jan 2013: 
+    Released ocaml-github-0.4.3 of  ocaml-github (more)  12 Jan 2013: 
+    Released ocaml-cow-0.5.1 of  ocaml-cow (more)  12 Jan 2013: 
+    Released 0.9.0 of  opam (more)  10 Jan 2013: 
+      Mirage as a xen.org incubated project  (more)  10 Jan 2013: 
+    Draft on  Data centers are microkernels done accidentally: lessons for building a million-core distributed OS (more)  5 Jan 2013: 
+     SIGPLAN Programming Languages Mentoring Workshop (more)  3 Jan 2013: 
+    Released ocaml-cstruct-0.6.0 of  ocaml-cstruct (more)  2 Jan 2013: 
+    Released 0.8.3 of  opam (more) 
+      
+      
+      Dec 2012
+      OCaml Labs kicked-off with an internal meeting of the Cambridge-based members. There are over 20 people involved just within the building and over 30 including those outside the University. We welcomed a few new members, including Leo White (Postdoc), Raphael Proust (PhD student) and Stephen Dolan (PhD student). At this initial gathering Anil talked over some of the projects that were already taking place in the Lab, as well as the new work that would be supported by OCaml Labs.
+Significant progress was made on the research side too. Mirage has had a flurry of new releases as we prepare for a first public release, and we're in the final stages of being officially incubated as a xen.org project. Signpost is also taking shape, mainly due to the addition of DNSSEC to the ocaml-dns implementation. There's been industrial interest in the applications of Signpost and the team is pursuing these for more use cases.
+We also began work on a new website for the Real World OCaml. We took inspiration from our friends who wrote Real World Haskell, and the site will have commenting functionality so that people can suggest improvements before the book is finalised. As part of this, we also worked with a design firm to begin creating a new logo for the OCaml language. The logo will be placed into the public domain for use by anyone.
+Last, but certainly not least, Ashish put the new ocaml.org website live, to much electronic applause. A great way to end 2012!
+
+             31 Dec 2012: 
+    Released ocaml-dns-0.6.0 of  ocaml-dns (more)  29 Dec 2012: 
+    Released ocaml-github-0.4.2 of  ocaml-github (more)  29 Dec 2012: 
+    Released ocaml-cohttp-0.9.5 of  ocaml-cohttp (more)  29 Dec 2012: 
+    Released ocaml-uri-1.3.6 of  ocaml-uri (more)  27 Dec 2012: 
+    Released ocaml-github-0.4.1 of  ocaml-github (more)  25 Dec 2012: 
+    Released ocaml-github-0.4.0 of  ocaml-github (more)  20 Dec 2012: 
+    Released mirage-platform-0.7.1 of  mirage-platform (more)  20 Dec 2012: 
+    Released mirage-platform-0.7.0 of  mirage-platform (more)  20 Dec 2012: 
+    Released mirage-net-0.5.1 of  mirage-net (more)  20 Dec 2012: 
+    Released mirage-net-0.5.0 of  mirage-net (more)  20 Dec 2012: 
+    Released ocaml-cstruct-0.6.1 of  ocaml-cstruct (more)  19 Dec 2012: 
+    Released ocaml-cohttp-0.9.4 of  ocaml-cohttp (more)  19 Dec 2012: 
+    Released ocaml-uri-1.3.5 of  ocaml-uri (more)  19 Dec 2012: 
+    Updated  Real World OCaml (online) (more)  18 Dec 2012: 
+    Updated  Design and Content of OCaml.org (more)  18 Dec 2012: 
+    Released ocaml-github-0.3.3 of  ocaml-github (more)  17 Dec 2012: 
+    Released ocaml-xenstore-1.1.0 of  ocaml-xenstore (more)  16 Dec 2012: 
+    Released ocaml-cstruct-0.5.3 of  ocaml-cstruct (more)  15 Dec 2012: 
+    Updated  Design and Content of OCaml.org (more)  15 Dec 2012: 
+    Released mirage-platform-0.6.1 of  mirage-platform (more)  14 Dec 2012: 
+    Released ocaml-github-0.3.2 of  ocaml-github (more)  14 Dec 2012: 
+    Released mirage-net-0.4.1 of  mirage-net (more)  14 Dec 2012: 
+    Released 0.8.2 of  opam (more)  13 Dec 2012: 
+      Mirage as a xen.org incubated project  (more)  11 Dec 2012: 
+    Released mirage-platform-0.6.0 of  mirage-platform (more)  11 Dec 2012: 
+    Released mirage-net-0.4.0 of  mirage-net (more)  11 Dec 2012: 
+    Released xenbigarray-1.0.0 of  xenbigarray (more)  11 Dec 2012: 
+    Released ocaml-cstruct-0.5.2 of  ocaml-cstruct (more)  10 Dec 2012: 
+    Released mirage-platform-0.5.0 of  mirage-platform (more)  10 Dec 2012: 
+    Released mirage-net-0.3.1 of  mirage-net (more)  10 Dec 2012: 
+    Published  Evolving TCP. How hard can it be? (more)  10 Dec 2012: 
+    Hacking on  Raspberry Pi hard float patch (more)  6 Dec 2012: 
+    Talked on  Unikernels: Functional Library Operating Systems for the Cloud (more)  6 Dec 2012: 
+    Hacking on  OCaml record-disambiguation branch (more)  5 Dec 2012: 
+    Talked on  OCaml in the Cloud: How to build an Open Source Virtualisation Platform (more)  4 Dec 2012: 
+    Updated  OCaml.org Mailing lists (more)  4 Dec 2012: 
+    Updated  OCaml.org Mailing lists (more)  4 Dec 2012: 
+    Released ocaml-cow-0.5.0 of  ocaml-cow (more)  1 Dec 2012: 
+    Press on  Bottom-Up IoT Innovation Thriving (more) 
+      
+      
+      Nov 2012
+      OCaml Labs finally opened its doors with announcements from Yaron and Anil! Although much of the remainder of November was spent on administration and wiring up machines for the forthcoming test cluster, we also celebrated the acceptance of a paper on Mirage to ASPLOS 2013.
+We also had a very productive visit from OCamlPro. Fabrice, Thomas and Pierre came over to discuss the new OPAM package manager and the plans for building an OCaml Platform in 2013. This was in preparation for the subsequent Consortium meeting of the industrial board of OCaml, where Anil was able to present (and get approved) an overview of what ocaml.org would become. You can see the slides of his talk online. An interesting thing to note is just how broad the set of OCaml language users are: right the way from formal methods, to systems projects, and even web developers.
+Since the Consortium meeting, the infrastructure behind ocaml.org is being built out and there's already been helpful input via the infrastructure mailing list. A continuous build system has been put together for internal testing, with support from Citrix, and OPAM itself continues to mature and grow in popularity.
+
+             30 Nov 2012: 
+    Updated  O'Reilly: Real World OCaml (more)  29 Nov 2012: 
+    Talked on  Understanding and Control: Owning your Home Network (more)  29 Nov 2012: 
+    Updated  OCaml Github mirror (more)  28 Nov 2012: 
+      Mirage as a xen.org incubated project  (more)  27 Nov 2012: 
+     OCaml Labs introduction (slides) (more)  27 Nov 2012: 
+    Talked on   Open-Types  (more)  22 Nov 2012: 
+     OCaml Labs introduction (slides) (more)  14 Nov 2012: 
+    Released 0.8.1 of  opam (more)  11 Nov 2012: 
+    Hacking on  OCaml record-disambiguation branch (more)  10 Nov 2012: 
+    Paper accepted  Unikernels: Library Operating Systems for the Cloud (more)  9 Nov 2012: 
+    Released 0.8.0 of  opam (more)  8 Nov 2012: 
+    Released ocaml-uri-1.3.4 of  ocaml-uri (more)  8 Nov 2012: 
+    Talked on   Software networking for the Internet of Things  (more)  7 Nov 2012: 
+    Talked on  Let a Billion Internets bloom: the future of personal clouds (more)  4 Nov 2012: 
+    Released mirage-platform-0.4.1 of  mirage-platform (more)  3 Nov 2012: 
+    Hacking on  OCaml record-disambiguation branch (more) 
+      
+      
+      Oct 2012
+       
+             27 Oct 2012: 
+    Released ocaml-cohttp-0.9.3 of  ocaml-cohttp (more)  24 Oct 2012: 
+    Hacking on  Raspberry Pi hard float patch (more)  24 Oct 2012: 
+    Talked on   Signposts: End-to-end networking in World of Middleboxes  (more)  20 Oct 2012: 
+    Talked on  Mirage/kFreeBSD (more)  16 Oct 2012: 
+    Released 0.7.7 of  opam (more)  14 Oct 2012: 
+    Released ocaml-github-0.3.1 of  ocaml-github (more)  14 Oct 2012: 
+    Released ocaml-uri-1.3.3 of  ocaml-uri (more)  8 Oct 2012: 
+    Released 0.7.6 of  opam (more)  6 Oct 2012: 
+    Released ocaml-cow-0.4.0 of  ocaml-cow (more)  6 Oct 2012: 
+    Released ocaml-dns-0.5.1 of  ocaml-dns (more)  5 Oct 2012: 
+    Released ocaml-xenstore-1.0.0 of  ocaml-xenstore (more)  3 Oct 2012: 
+    Released 0.7.5 of  opam (more)  1 Oct 2012: 
+    Released dyntype-0.9.0 of  dyntype (more)  1 Oct 2012: 
+    Released orm-0.7.0 of  orm (more)  1 Oct 2012: 
+    Released 0.7.4 of  opam (more) 
+      
+      
+      Sep 2012
+       
+             30 Sep 2012: 
+    Released dyntype-0.8.5 of  dyntype (more)  30 Sep 2012: 
+    Released orm-0.6.4 of  orm (more)  29 Sep 2012: 
+    Released ocaml-cstruct-0.5.1 of  ocaml-cstruct (more)  29 Sep 2012: 
+    Released 0.7.3 of  opam (more)  29 Sep 2012: 
+    Released ocaml-dns-0.5.0 of  ocaml-dns (more)  25 Sep 2012: 
+    Talked on  Mirage: OCaml Appliances for Xen Clouds (more)  24 Sep 2012: 
+    Released 0.7.2 of  opam (more)  22 Sep 2012: 
+    Released 0.7.1 of  opam (more)  21 Sep 2012: 
+    Released ocaml-cstruct-0.5.0 of  ocaml-cstruct (more)  21 Sep 2012: 
+    Released ocaml-cohttp-0.9.2 of  ocaml-cohttp (more)  21 Sep 2012: 
+    Released ocaml-crunch-1.0.1 of  ocaml-crunch (more)  21 Sep 2012: 
+    Released ocaml-crunch-1.0.0 of  ocaml-crunch (more)  21 Sep 2012: 
+    Released 0.7.0 of  opam (more)  20 Sep 2012: 
+    Released ocaml-uri-1.3.2 of  ocaml-uri (more)  18 Sep 2012: 
+    Released ocaml-dns-0.4.0 of  ocaml-dns (more)  18 Sep 2012: 
+    Released ocaml-pcap-0.3.2 of  ocaml-pcap (more)  18 Sep 2012: 
+    Released ocaml-pcap-0.3.1 of  ocaml-pcap (more)  18 Sep 2012: 
+    Released 0.3.1 of  ocaml-pcap (more)  18 Sep 2012: 
+    Released 0.3.0 of  ocaml-pcap (more)  14 Sep 2012: 
+    Talked on  Programming the Xen cloud using OCaml (more)  14 Sep 2012: 
+    Talked on  The State of OPAM (more)  13 Sep 2012: 
+    Released ocaml-uri-1.3.1 of  ocaml-uri (more)  12 Sep 2012: 
+    Released ocaml-github-0.3.0 of  ocaml-github (more)  12 Sep 2012: 
+    Released dyntype-0.8.4 of  dyntype (more)  12 Sep 2012: 
+    Released 0.8.4 of  dyntype (more)  12 Sep 2012: 
+    Released orm-0.6.3 of  orm (more)  11 Sep 2012: 
+    Released mirage-platform-0.4.0 of  mirage-platform (more)  11 Sep 2012: 
+    Released mirage-net-0.3.0 of  mirage-net (more)  11 Sep 2012: 
+    Released ocaml-cow-0.3.2 of  ocaml-cow (more)  11 Sep 2012: 
+    Released ocaml-cohttp-0.9.1 of  ocaml-cohttp (more)  11 Sep 2012: 
+    Released 0.6.0 of  opam (more)  6 Sep 2012: 
+    Released 0.5.0 of  opam (more)  4 Sep 2012: 
+    Released mirage-platform-0.3.0 of  mirage-platform (more)  4 Sep 2012: 
+    Released ocaml-cstruct-0.4.1 of  ocaml-cstruct (more)  4 Sep 2012: 
+    Released ocaml-cow-0.3.1 of  ocaml-cow (more)  2 Sep 2012: 
+    Released ocaml-cstruct-0.4.0 of  ocaml-cstruct (more)  2 Sep 2012: 
+    Released ocaml-cow-0.3.0 of  ocaml-cow (more) 
+      
+      
+      Aug 2012
+       
+             27 Aug 2012: 
+    Talked on  Mirage: OCaml Appliances for Xen Clouds (more)  26 Aug 2012: 
+    Released ocaml-cstruct-0.3 of  ocaml-cstruct (more)  25 Aug 2012: 
+    Released 0.4.0 of  opam (more)  24 Aug 2012: 
+    Released ocaml-uri-1.3.0 of  ocaml-uri (more)  21 Aug 2012: 
+    Released ocaml-uri-1.2 of  ocaml-uri (more)  13 Aug 2012: 
+    Published  Signposts: End-to-end networking in World of Middleboxes (more)  8 Aug 2012: 
+    Released 0.3.2 of  opam (more)  5 Aug 2012: 
+    Released dyntype-0.8.3 of  dyntype (more)  1 Aug 2012: 
+    Released ocaml-uri-1.1 of  ocaml-uri (more)  1 Aug 2012: 
+    Released ocaml-uri-1.0 of  ocaml-uri (more) 
+      
+      
+      Jul 2012
+       
+             21 Jul 2012: 
+    Released 0.3.1 of  opam (more)  17 Jul 2012: 
+    Released 0.3 of  opam (more)  7 Jul 2012: 
+    Released 0.2 of  opam (more) 
+      
+      
+      Jun 2012
+       
+             26 Jun 2012: 
+    Released 0.1 of  opam (more)  22 Jun 2012: 
+    Released dyntype-0.8.2 of  dyntype (more)  22 Jun 2012: 
+    Released dyntype-0.7.3 of  dyntype (more)  15 Jun 2012: 
+    Published  Cost, performance & flexibility in OpenFlow: Pick three (more) 
+      
+      
+      Mar 2012
+       
+             3 Mar 2012: 
+    Published  The Case for Reconfigurable I/O Channels (more) 
+      
+      
+      Feb 2012
+       
+             4 Feb 2012: 
+    Talked on  The Wild West of UNIX I/O (more) 
+      
+      
+      Jan 2012
+       
+             29 Jan 2012: 
+    Press on  Interview with Anil Madhavapeddy (more) 
+      
+      
+      Aug 2011
+       
+             1 Aug 2011: 
+    Draft on  Limel: Local Computation and Linear Coordination (more) 
+      
+      
+      Jan 2011
+       
+             26 Jan 2011: 
+    Released orm-0.6.2 of  orm (more) 
+      
+      
+      Nov 2010
+       
+             15 Nov 2010: 
+    Released dyntype-0.8.0 of  dyntype (more)  8 Nov 2010: 
+    Released orm-0.6.1 of  orm (more)  3 Nov 2010: 
+    Released dyntype-0.7.2 of  dyntype (more) 
+      
+      
+      Sep 2010
+       
+             21 Sep 2010: 
+    Released orm-0.6.0 of  orm (more) 
+      
+      
+      Mar 2010
+       
+             12 Mar 2010: 
+    Released dyntype-0.7.1 of  dyntype (more)  12 Mar 2010: 
+    Released orm-0.5.1 of  orm (more) 
+      
+      
+      Feb 2010
+       
+             17 Feb 2010: 
+    Released dyntype-0.7 of  dyntype (more)  17 Feb 2010: 
+    Released orm-0.5 of  orm (more) 
+      
+      
+  
+
+© 2012-2013 Anil MadhavapeddyInformation provided by Anil Madhavapeddy
+

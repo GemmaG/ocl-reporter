@@ -1,0 +1,77 @@
+
+OCaml Labs
+
+
+
+
+Real World Functional Programming
+
+The goal of OCaml Labs is to push OCaml and
+functional programming forward as a platform, making it a more effective tool
+for current users (including significant industrial users)
+and at the same time
+growing the appeal of the language, broadening its applicability and popularity
+by a combination of technological advancements, creation of community
+infrastructure, and public communications.
+
+
+We are always pleased to discuss collaboration
+opportunities, and feel free to contact us directly with any questions.
+A core principle of the OCaml Labs is that all of the work done here will be freely
+released available under
+open-source licences, and efforts made to integrate all work upstream (e.g. to INRIA, who originally developed and have maintained OCaml since its release in 1996).
+
+This effort is run across multiple groups in the Computer Laboratory, primarily the
+SRG and PLS,
+and including collaborators from the Security, CompArch and DTG groups.   We would like to especially thank our primary
+funder, Jane Street, for their generous support.
+
+Recent News
+
+2nd Apr 2015: The yearly review of 2014 is now available.
+15th Mar 2015: The projects section has been updated with the latest results.
+30th Jan 2015: New papers in OSR, USENIX NSDI and JFLA available.
+31st Dec 2014: MirageOS 2014-in-review blog post published.
+31st Aug 2014: OCaml Labs has ten presentations during the ICFP 2014 week.
+29th Dec 2013: The yearly review of 2013 is now available.
+9th Dec 2013: Mirage OS 1.0 released!.
+20th Nov 2013: New OCaml website is online..
+17th Sept 2013: Papers section now available.
+19th July 2013: New job: Scaling Distributed Applications to Millions of Nodes posted.
+1st July 2013: Monthly report available for June 2013.
+1st July 2013: Monthly report available for May 2013.
+30th Apr 2013: Monthly report available for April 2013.
+14th Apr 2013: MirageOS prominently featured in Linux Foundation Press Release.
+30th Mar 2013: Monthly report available for March 2013.
+18th Mar 2013: Won a Hub-of-All-Things grant for embedded development.
+1st Mar 2013:  Awarded EPSRC Network-as-a-Service grant with Imperial/Nottingham.
+28th Feb 2013: Monthly report available for February 2013.
+31st Jan 2013: Monthly report available for January 2013.
+24th Dec 2012: Monthly report available for December 2012.
+30th Nov 2012: Monthly report available for November 2012.
+
+
+
+  
+    Upcoming Events
+      Cambridge OCaml Compiler Hacking
+      OCaml Meetups in Cambridge
+      SIGPLAN OCaml Users and Developers Workshop 2014
+      SIGPLAN Commercial Users of Functional Programming 2014
+    Quick Links
+      OCaml Homepage
+      Real World OCaml
+      OPAM package manager
+      Mirage OS
+    Group Activities
+      SRG Seminar series
+      Group meetings
+      SRG Blog
+      OCaml Labs Blogs
+  
+
+
+
+
+
+
